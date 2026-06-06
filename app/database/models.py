@@ -83,6 +83,8 @@ class AuditLog(Base):
 
     event_type = Column(String, nullable=False)
 
+    source = Column(String, nullable=False)
+
     description = Column(String, nullable=False)
 
     created_at = Column(
