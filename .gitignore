@@ -24,3 +24,6 @@ logs/
 # OS Files
 .DS_Store
 Thumbs.db
+
+#other file and folders
+uploads/
