@@ -1,7 +1,7 @@
-import AppRoutes from "./routes/AppRoutes";
+import ReconciliationWorkspace from "./pages/ReconciliationWorkspace";
 
 function App() {
-  return <AppRoutes />;
+  return <ReconciliationWorkspace />;
 }
 
 export default App;
