@@ -11,7 +11,7 @@ export default function AppRoutes() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/upload" element={<UploadAudit />} />
-        <Route path="/logs" element={<AuditLogs />} />
+        {/* <Route path="/logs" element={<AuditLogs />} /> */}
         <Route path="/emails" element={<EmailHistory />} />
       </Routes>
     </BrowserRouter>

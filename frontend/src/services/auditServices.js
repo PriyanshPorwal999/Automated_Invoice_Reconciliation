@@ -28,8 +28,20 @@ export const uploadDocument =
   async (formData) => {
     const res =
       await api.post(
-        "/audit-document",
+        // "/audit-document",
+        "/upload",
         formData
+      );
+    return res.data;
+  };
+
+export const reconcileDocuments =
+  async (payload) => {
+
+    const res =
+      await api.post(
+        "/reconcile/",
+        payload
       );
 
     return res.data;

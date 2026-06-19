@@ -38,6 +38,8 @@ async def upload_files(
 
     os.makedirs(UPLOAD_DIR, exist_ok=True)
 
+    uploaded_files = []
+
     for file in files:
 
         # MIME validation
@@ -74,6 +76,15 @@ async def upload_files(
         with open(file_path, "wb") as buffer:
             buffer.write(content)
 
+
+            uploaded_files.append({
+                "filename": unique_filename,
+                "document_type": document_type,
+                "file_path": file_path
+            })
+
+            
+
         # Database record
         log_upload(
             db=db,
@@ -95,6 +106,12 @@ async def upload_files(
     )
 
     return {
-        "message": "Files uploaded successfully",
-        "uploaded_count": uploaded_count
+    "message": "Files uploaded successfully",
+    "uploaded_count": uploaded_count,
+    "uploaded_files": uploaded_files
     }
+
+    # return {
+    #     "message": "Files uploaded successfully",
+    #     "uploaded_count": uploaded_count
+    # }

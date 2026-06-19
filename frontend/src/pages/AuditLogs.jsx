@@ -1,5 +1,5 @@
 import Sidebar from "../component/layout/sidebar.jsx";
-import AuditTable from "../component/logs/AuditTable.jsx";
+// import AuditTable from "../component/logs/AuditTable.jsx";
 
 export default function AuditLogs() {
   return (
@@ -15,9 +15,9 @@ export default function AuditLogs() {
           Complete history of document audits
         </p>
 
-        <div className="mt-8">
+        {/* <div className="mt-8">
           <AuditTable />
-        </div>
+        </div> */}
       </main>
     </div>
   );
