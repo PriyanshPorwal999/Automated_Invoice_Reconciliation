@@ -4,7 +4,7 @@ AI-powered invoice reconciliation platform built using FastAPI, Gemini, LangGrap
 
 ## Project Overview
 
-This project automates the reconciliation of:
+This project automates the reconciliation of :
 
 - Invoices
 - Purchase Orders (PO)
